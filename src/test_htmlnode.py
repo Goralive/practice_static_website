@@ -13,7 +13,7 @@ class TestHTMLNode(unittest.TestCase):
             props={"href": "https://www.google.com", "target": "_blank"}
         )
         actual = html_node.props_to_html()
-        expected = " href=\"https://www.google.com\" target=\"_blank\""
+        expected = ' href="https://www.google.com" target="_blank"'
         self.assertEqual(expected, actual)
         self.assertIsNone(html_node.children)
         self.assertIsNone(html_node.tag)
@@ -40,7 +40,6 @@ class TestHTMLNode(unittest.TestCase):
         )
 
         self.assertEqual("", node.props_to_html())
-
 
 
 if __name__ == "__main__":
