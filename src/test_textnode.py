@@ -13,7 +13,7 @@ class TestTextNode(unittest.TestCase):
         node = TextNode("This text is bold", "bold", "Some Url")
         node2 = TextNode("This text is bold", "bold")
         self.assertNotEqual(node, node2)
-        self.assertEquals(node.url, "Some Url")
+        self.assertEqual(node.url, "Some Url")
 
 
 if __name__ == "__main__":
